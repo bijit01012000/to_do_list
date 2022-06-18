@@ -1,0 +1,125 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+/* main page */
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.section-center {
+  background:lightblue;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  padding: 2rem;
+}
+.section-center:hover {
+  box-shadow: var(--dark-shadow);
+}
+/* alert notification style */
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: red;
+
+}
+.alert-success {
+  color: #155724;
+  background:white;
+ 
+}
+.work-form h3 {
+  color: grey;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+
+/* individual work  */
+#work {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-color: black;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: black;
+}
+/* add button */
+.submit-btn {
+  background: greenyellow;
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.submit-btn:hover {
+  background: green;
+  color: var(--clr-white);
+}
+
+.work-container {
+  margin-top: 2rem;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.work-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+ border:royalblue solid 3px;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+.work-item:hover {
+  color: grey;
+  background:lightblue;
+}
+
+/* clear items button  */
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: red;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+
+  margin-top: 1.25rem;
+}
+.clear-btn:hover {
+  background: lightcoral;
+}

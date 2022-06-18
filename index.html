@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <!-- form -->
+      <form class="work-form">
+        <!-- alert when somechanges happen -->
+        <p class="alert"></p>
+
+        <h3>TO DO LIST</h3>
+        <!-- form to add and edit the list -->
+        <div class="form-control">
+          <input
+            type="text"
+            id="work"
+            placeholder="e.g. submit assignment"
+          />
+          <button type="submit" class="submit-btn">add</address></button>
+        </div>
+      </form>
+      <!-- container show the item in the list -->
+      <div class="work-container">
+        <div class="work-list"></div>
+
+        <!-- clear all items button -->
+        <button class="clear-btn">clear items</button>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
+
